@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Instalaciones Deportivas - UDG Fit</title>
+  <link rel="stylesheet" href="css/instalaciones.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+
+  </style>
+</head>
+<body class="bg-gray-100">
+
+  <!-- Header -->
+  <header class="bg-blue-600 text-white p-4 flex justify-between items-center">
+    <h1 class="text-xl font-bold">UDG Fit - Instalaciones</h1>
+    <a href="dashboard.html" class="bg-gray-300 text-black px-4 py-2 rounded hover:bg-gray-400">Volver</a>
+  </header>
+
+  <!-- Contenido principal -->
+  <main class="p-6">
+    <h2 class="text-2xl font-semibold mb-4">Instalaciones disponibles</h2>
+    <div id="lista-instalaciones" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <!-- Instalaciones generadas por JS -->
+    </div>
+  </main>
+
+  <!-- Modal de reserva -->
+  <div id="modal" class="modal hidden">
+    <div class="modal-content">
+      <h2 class="text-xl font-bold mb-4">Reservar instalación</h2>
+      <form id="form-reserva">
+        <input type="hidden" id="instalacion-id" />
+        <label class="block mb-2">Día:</label>
+        <input type="date" id="reserva-dia" class="w-full border p-2 rounded mb-4" required />
+        <label class="block mb-2">Hora:</label>
+        <input type="time" id="reserva-hora" class="w-full border p-2 rounded mb-4" required />
+        <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 w-full">Confirmar reserva</button>
+        <button type="button" onclick="cerrarModal()" class="text-sm text-gray-600 mt-2 underline w-full">Cancelar</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-blue-600 text-white text-center p-4">
+    <p>&copy; 2025 UDG Fit App. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="js/instalaciones.js"></script>
+</body>
+</html>

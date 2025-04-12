@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Panel Principal - UDG Fit</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/dashboard.css" />
+
+</head>
+<body class="bg-gray-100">
+
+  <!-- Header -->
+  <header class="bg-blue-600 text-white p-4 flex justify-between items-center">
+    <h1 class="text-xl font-bold">Bienvenido a UDG Fit</h1>
+    <button onclick="cerrarSesion()" class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600">Cerrar sesión</button>
+  </header>
+
+  <!-- Contenido principal -->
+  <main class="p-6">
+    <h2 class="text-2xl font-semibold mb-6">¿Qué deseas hacer?</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+      <!-- Instalaciones -->
+      <a href="instalaciones.html" class="bg-white p-6 rounded shadow hover:shadow-lg transition">
+      
+        <h3 class="text-xl font-bold mb-2">Ver instalaciones</h3>
+        <img src="public/instalaciones.jpg" alt="Instalaciones" class="w-full h-full object-cover rounded mb-4">
+        <p>Consulta, explora y reserva espacios deportivos.</p>
+      </a>
+
+      <!-- Mis Reservas -->
+      <a href="reservas.html" class="bg-white p-6 rounded shadow hover:shadow-lg transition">
+        <h3 class="text-xl font-bold mb-2">Mis Reservas</h3>
+        <img src="public/reserva.jpg" alt="reservas" class="w-full h-full object-cover rounded mb-4">
+        <p>Consulta y cancela tus reservas activas.</p>
+      </a>
+      <!-- Eventos -->
+      <a href="eventos.html" class="bg-white p-6 rounded shadow hover:shadow-lg transition">
+        <h3 class="text-xl font-bold mb-2">Eventos y Torneos</h3>
+        <img src="public/torneos.jpg" alt="reservas" class="w-full h-full object-cover rounded mb-4">
+        <p>Participa en eventos deportivos y torneos organizados.</p>
+      </a>
+      <!-- Rutinas -->
+      <a href="rutinas.html" class="bg-white p-6 rounded shadow hover:shadow-lg transition">
+        <h3 class="text-xl font-bold mb-2">Rutinas</h3>
+        <img src="public/rutinas.webp" alt="reservas" class="w-full h-full object-cover rounded mb-4">
+
+        <p>Explora rutinas de ejercicio personalizadas para todos los niveles.</p>
+      </a>
+      <!-- Placeholder para futuras secciones -->
+      <a href="#" class="bg-gray-200 text-gray-500 p-6 rounded shadow cursor-not-allowed">
+        <h3 class="text-xl font-bold mb-2">Próximamente</h3>
+        <p>Inscripción a equipos, rutinas personalizadas y más.</p>
+      </a>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-blue-600 text-white text-center p-4">
+    <p>&copy; 2025 UDG Fit App. Todos los derechos reservados.</p>
+  </footer>
+
+  <script>
+    function cerrarSesion() {
+      localStorage.removeItem("codigo");
+      window.location.href = "index.html";
+    }
+  </script>
+</body>
+</html>
