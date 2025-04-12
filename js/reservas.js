@@ -34,3 +34,5 @@ function cancelarReserva(index) {
   alert("Reserva cancelada correctamente.");
   location.reload();
 }
+// Verificar autenticación al cargar la página
+verificarAutenticacion();

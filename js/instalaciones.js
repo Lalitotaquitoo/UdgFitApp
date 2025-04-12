@@ -94,3 +94,6 @@ document.getElementById("form-reserva").addEventListener("submit", function (e) 
   alert(`Reserva realizada en ${reserva.instalacion} para el ${reserva.dia} a las ${reserva.hora}`);
   cerrarModal();
 });
+
+// Verificar autenticación al cargar la página
+verificarAutenticacion();

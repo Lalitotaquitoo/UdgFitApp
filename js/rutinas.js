@@ -73,3 +73,6 @@ const rutinas = [
   
   // Renderizar todas las rutinas al cargar la página
   document.addEventListener("DOMContentLoaded", () => renderizarRutinas());
+
+  // Verificar autenticación al cargar la página
+verificarAutenticacion();
